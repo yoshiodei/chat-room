@@ -1,0 +1,137 @@
+.chat-room {
+    flex: 3.5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-room__header {
+    padding: 0 30px;
+    height: 4em;
+    width: 100%;
+    background-color: rgba(220, 222, 226, 0.384);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.chat-room__main {
+    padding-top: 20px;
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: scroll;
+}
+
+.chat-room__main::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-room__main::-webkit-scrollbar-track {
+    background-color: rgba(241, 241, 241, 0.768);
+}
+
+.chat-room__main::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: rgb(185, 185, 185);
+}
+
+.chat-room__image {
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background-color: darkgrey;
+    margin-right: 20px;
+}
+
+.chat-room__username {
+    color:rgb(30, 30, 30);
+}
+
+.chat-room__footer {
+    border-top: 1px solid rgb(210, 210, 210);
+    height: 15vh;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.chat-room__text-area {
+    flex: 4;
+    height: 10vh;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+.chat-room__text-area:focus {
+    outline: none;
+}
+
+.chat-room__button {
+    flex: 0.5;
+    height: 40px;
+    border: none;
+    background-color: rgb(65, 65, 227);
+    border-radius: 3px;
+    color: white;
+}
+
+.chat-room__message {
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.my-message {
+    flex-direction: row-reverse;
+} 
+
+.chat-room__message-image {
+    margin: 0 15px;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: darkgrey;
+    border-radius: 50%;
+}
+
+.chat-room__message-text {
+    display: inline;
+    min-height: 2em;
+    max-width: 500px;
+    line-height: 1.4;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(201, 201, 210);
+    color:rgb(47, 47, 47);
+}
+
+.my-message-text {
+    background-color: rgb(93, 93, 217);
+    color:white;
+}
+
+.chat-room__message-div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.chat-room__message-time {
+    align-self: flex-start;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.my-message-time{
+    align-self: flex-end;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
